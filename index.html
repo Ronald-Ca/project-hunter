@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/img/login.png" />
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
     <title>Hunter x Hunter</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="./src/img/login.png" />
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/style.css">
+
 </head>
 
 <body>
@@ -33,22 +35,37 @@
         </a>
         <nav>
             <ul class="menu">
-                <li>Home</li>
-                <li>About</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="container">
         <div class="infomation">
-            <img class="imagem-titulo" src="./src/img/HunterXHunter.png" alt="imagem do nome do anime hunter x hunter">
+
+            <img class="image-title" src="./src/img/HunterXHunter.png" alt="imagem do nome do anime hunter x hunter">
+
             <p class="description">Young Gon dreams of being a Hunter, just like his father, who abandoned him when he
                 was still little.
                 Decided to go after what he wants, he is given the chance to take a very difficult physical test to
-                prove that he is the best Hunter in the world.</p>
+                prove that he is the best Hunter in the world.
+            </p>
+
             <button class="button-trailer">See the trailer</button>
         </div>
-        <img class="hunter" src="./src/img/characters.png" alt="personagens de hunter x hunter">
+
+        <img class="hunter" src="./src/img/character.png" alt="personagens de hunter x hunter" width="600" height="400">
+
+        <div class="modal ">
+            <span class="close-modal">X</span>
+
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/2hAWy3qKuTg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
     </main>
 
 </body>
